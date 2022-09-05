@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.4;
 
-contract todo{
+contract taskManager{
 
     struct todoItem {
         string itemTitle;

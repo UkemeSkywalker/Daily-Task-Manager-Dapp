@@ -3,12 +3,12 @@ import { task } from "hardhat/config";
 
 async function main(){
 
-    const taskManager = await ethers.getContractFactory("deleteTodo");
+    const taskManager = await ethers.getContractFactory("taskManager");
 
     const deploy = await taskManager.deploy();
     const result = await deploy.deployed();
 
-    console.log("contract deployed at:", result);
+    console.log("contract deployed at:", result.address);
 
 }
 main()
