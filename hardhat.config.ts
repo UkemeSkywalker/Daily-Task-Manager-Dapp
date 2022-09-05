@@ -9,6 +9,9 @@ module.exports = {
       url: process.env.RPC,
       accounts: [process.env.SKYWALKER]
     }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN
   }
 };
 
